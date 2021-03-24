@@ -24,9 +24,10 @@ startBtn.addEventListener('click', () => {
 
     let score = 0;
 
-    const firstAnswer = prompt('Is an octopus a considered a Crustacean');
+    const firstAnswer = prompt('Is an octopus considered a Crustacean?');
     const secondAnswer = prompt('Is an octopus considered one of the most intelligent invertebrates on earth?');
     const thirdAnswer = prompt('Are all octopuses deadly to humans?');
+    const quizCompleted = alert('You finished the quiz! See below for your results.')
 
     if(!countsAsAYes(firstAnswer)) {
         score++;
@@ -38,7 +39,7 @@ startBtn.addEventListener('click', () => {
         score++;
     }
 
-    const outcomeString = `Okay ${name}, you got ${score} right out of 3.`;
+    const outcomeString = `Okay ${name}, you got ${score}/3 correct!`;
 
     outcomeDiv.textContent = outcomeString;
 

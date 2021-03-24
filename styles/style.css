@@ -31,18 +31,23 @@ main {
   align-items: center;
   flex-direction: column;
   margin: 1rem;
+  width: 100%;
 }
 
-p {
+.text-container {
+  background-color: #c9ada7;
   width: 65%;
+  box-shadow: 2px 2px 15px 2px black;
   font-size: 1.5rem;
   font-family: "Lexend", sans-serif;
   line-height: 1.5;
-  background-color: #c9ada7;
   padding: 2rem;
-  box-shadow: 2px 2px 15px 2px black;
 }
 
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
 button {
   margin-top: 3rem;
   font-size: 2rem;
